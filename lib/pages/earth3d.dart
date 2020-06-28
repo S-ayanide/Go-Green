@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
+import 'package:go_green/bloc/navigation_bloc/navigation_bloc.dart';
 import 'package:go_green/components/giftButton.dart';
 
-class Earth3D extends StatefulWidget {
+class Earth3D extends StatefulWidget with NavigationStates {
   @override
   _Earth3DState createState() => _Earth3DState();
 }
