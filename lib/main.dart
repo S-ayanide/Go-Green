@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:go_green/menu/sidebar_layout.dart';
 import 'package:flutter_config/flutter_config.dart';
+import 'package:go_green/pages/splash.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: SideBarLayout(),
+      home: SplashScreen(),
     );
   }
 }
