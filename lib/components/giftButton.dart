@@ -14,11 +14,27 @@ Container outlineButton(final _width, final _height) {
       border: Border.all(color: Colors.white),
       borderRadius: BorderRadius.circular(30),
     ),
-    child: Center(
-      child: Text(
-        'Gift A Tree',
-        style: TextStyle(color: Colors.white, fontSize: 25),
+    child: InkWell(
+      child: Row(
+        children: <Widget>[
+          Padding(
+            padding: EdgeInsets.only(
+                top: _height * 0.015,
+                bottom: _height * 0.015,
+                left: _width * 0.2,
+                right: _width * 0.1),
+            child: Text(
+              'Gift A Tree',
+              style: TextStyle(color: Colors.white, fontSize: 25),
+            ),
+          ),
+          Icon(
+            Icons.arrow_forward_ios,
+            color: Colors.white,
+          ),
+        ],
       ),
+      onTap: () => {print('Tapped')},
     ),
   );
 }
