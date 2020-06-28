@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
+import 'package:go_green/components/giftButton.dart';
 
 class Earth3D extends StatefulWidget {
   @override
@@ -68,14 +69,7 @@ class _Earth3DState extends State<Earth3D> with SingleTickerProviderStateMixin {
                 top: _height * 0.76,
                 left: _width * 0.15,
               ),
-              child: SizedBox(
-                width: _width * 0.7,
-                height: _height * 0.08,
-                child: RaisedButton(
-                  color: Colors.white,
-                  onPressed: () => {},
-                ),
-              ),
+              child: outlineButton(_width, _height),
             ),
           ],
         ),
