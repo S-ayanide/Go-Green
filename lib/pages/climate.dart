@@ -48,23 +48,21 @@ class _ClimateState extends State<Climate> {
                       child: SlideAnimation(
                         verticalOffset: 50.0,
                         child: FadeInAnimation(
-                          child: GestureDetector(
-                            onTap: () => {print(climateNews[index].url)},
-                            child: Container(
-                              padding: EdgeInsets.all(40),
-                              decoration: BoxDecoration(boxShadow: [
-                                BoxShadow(
-                                  color: Colors.white,
-                                  offset: Offset(0, 2),
-                                  blurRadius: 4,
-                                  spreadRadius: 0,
-                                ),
-                              ]),
-                              child: BlogTile(
-                                imageUrl: climateNews[index].urlToImage,
-                                title: climateNews[index].title,
-                                description: climateNews[index].description,
+                          child: Container(
+                            padding: EdgeInsets.all(40),
+                            decoration: BoxDecoration(boxShadow: [
+                              BoxShadow(
+                                color: Colors.white,
+                                offset: Offset(0, 2),
+                                blurRadius: 4,
+                                spreadRadius: 0,
                               ),
+                            ]),
+                            child: BlogTile(
+                              imageUrl: climateNews[index].urlToImage,
+                              title: climateNews[index].title,
+                              description: climateNews[index].description,
+                              url: climateNews[index].url,
                             ),
                           ),
                         ),
