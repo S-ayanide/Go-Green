@@ -16,6 +16,8 @@ dependencies:
     flutter_bloc: ^2.1.1
     font_awesome_flutter:
     http: ^0.12.1
+    flutter_staggered_animations: ^0.1.2
+    cached_network_image:
 
 dev_dependencies:
     flutter_config:

@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:flutter_config/flutter_config.dart';
 
-class Climate {
+class ClimateData {
   List<ArticleModel> climateNews = [];
 
   Future<void> getClimateNews() async {
@@ -17,12 +17,15 @@ class Climate {
       jsonData["articles"].forEach((element) {
         if (element["urlToImage"] != null && element["description"] != null) {
           ArticleModel articleModel = ArticleModel(
-              title: element["title"],
-              author: element["author"],
-              description: element["description"],
-              url: element["url"],
-              urlToImage: element["urlToImage"],
-              content: element["content"]);
+            title: element["title"],
+            author: element["author"],
+            description: element["description"],
+            url: element["url"],
+            urlToImage: element["urlToImage"],
+            content: element["content"],
+          );
+
+          climateNews.add(articleModel);
         }
       });
     }
