@@ -18,7 +18,7 @@ class _SideBarState extends State<SideBar>
   StreamController<bool> isSidebarOpenedStreamController;
   Stream<bool> isSidebarOpenedStream;
   StreamSink<bool> isSidebarOpenedSink;
-  final _animationDuration = const Duration(milliseconds: 900);
+  final _animationDuration = const Duration(milliseconds: 350);
 
   @override
   void initState() {
