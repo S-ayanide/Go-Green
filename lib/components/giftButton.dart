@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:go_green/widgets/article_view.dart';
 
-Container outlineButton(final _width, final _height) {
+Container outlineButton(final _width, final _height, BuildContext context) {
   return Container(
     width: _width * 0.7,
     height: _height * 0.08,
@@ -34,7 +35,16 @@ Container outlineButton(final _width, final _height) {
           ),
         ],
       ),
-      onTap: () => {print('Tapped')},
+      onTap: () => {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => ArticleView(
+              blogUrl: 'https://tree-nation.com/plant/offer',
+            ),
+          ),
+        ),
+      },
     ),
   );
 }
