@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:go_green/menu/sidebar_layout.dart';
+import 'package:flutter_config/flutter_config.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await FlutterConfig.loadEnvVariables();
   runApp(MyApp());
 }
 
