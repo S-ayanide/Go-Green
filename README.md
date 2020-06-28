@@ -1,10 +1,10 @@
-# save_earth
+# Go Green
 
-A new Flutter project.
+This app is an initiative taken to reduce the adverse effect on Climate Change and make the people aware about the best practice to reduce the possibility of harming not just the environment but also making severe climate change less prone.
+
+This app aims to help the environment by planting trees and thus provides the choice to gift someone a tree which will go straight to a charity fund who would be responsible for planting trees.
 
 ## Getting Started
-
-This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
 
