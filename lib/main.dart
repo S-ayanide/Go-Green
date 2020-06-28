@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:go_green/pages/earth3d.dart';
+// import 'package:go_green/pages/earth3d.dart';
+import 'package:go_green/pages/menu.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Earth3D(),
+      home: Menu(),
     );
   }
 }
