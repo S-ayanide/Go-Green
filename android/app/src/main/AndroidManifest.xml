@@ -8,10 +8,11 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />  
-    
+
     <application
         android:name="io.flutter.app.FlutterApplication"
         android:label="Go Green"
+        android:usesCleartextTraffic="true"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
