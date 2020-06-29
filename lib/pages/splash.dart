@@ -12,7 +12,6 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     Timer(
         Duration(seconds: 5),
@@ -42,28 +41,11 @@ class _SplashScreenState extends State<SplashScreen> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      CircleAvatar(
-                        backgroundColor: Colors.black38,
-                        backgroundImage: NetworkImage(
-                          'https://i.ibb.co/Csp0rhq/go-green-logo.png',
-                        ),
-                        radius: 50.0,
-                      ),
-                      Padding(
-                        padding: EdgeInsets.only(top: 10.0),
-                      ),
-                      Text(
-                        'Go Green',
-                        style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 24.0),
-                      ),
                       Container(
                           margin: EdgeInsets.only(top: 20),
                           alignment: Alignment.center,
                           padding: EdgeInsets.symmetric(
-                            vertical: 30,
+                            vertical: MediaQuery.of(context).size.height / 5,
                             horizontal: MediaQuery.of(context).size.width / 3,
                           ),
                           child: Lottie.asset(
