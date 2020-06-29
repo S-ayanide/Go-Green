@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'dart:async';
 import 'package:go_green/bloc/navigation_bloc/navigation_bloc.dart';
-import 'package:go_green/widgets/article_view.dart';
 import 'package:lottie/lottie.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Hack20 extends StatelessWidget with NavigationStates {
   @override
@@ -115,15 +116,8 @@ class Hack20 extends StatelessWidget with NavigationStates {
                   child: Center(
                     child: RaisedButton(
                       padding: EdgeInsets.all(20),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => ArticleView(
-                                    blogUrl: 'https://flutterhackathon.com/#/',
-                                  )),
-                        );
-                      },
+                      onPressed: () =>
+                          launch('https://flutterhackathon.com/#/'),
                       child: Text(
                         'Check out Hack 20',
                         style: TextStyle(
@@ -141,5 +135,14 @@ class Hack20 extends StatelessWidget with NavigationStates {
         ),
       ),
     );
+  }
+}
+
+_launchURL() async {
+  const url = 'https://flutterhackathon.com/#/';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
   }
 }

@@ -92,11 +92,10 @@ class _SideBarState extends State<SideBar>
                           ),
                         ),
                         leading: CircleAvatar(
-                          child: Icon(
-                            Icons.perm_identity,
-                            color: Colors.white,
+                          backgroundImage: NetworkImage(
+                            'https://i.ibb.co/Csp0rhq/go-green-logo.png',
                           ),
-                          radius: 40,
+                          radius: 30,
                         ),
                       ),
                       Divider(

@@ -8,7 +8,7 @@ class ClimateData {
 
   Future<void> getClimateNews() async {
     String url =
-        "http://newsapi.org/v2/everything?q=climate&from=2020-05-28&sortBy=publishedAt&apiKey=${FlutterConfig.get('API_KEY')}";
+        "http://newsapi.org/v2/everything?q=climate&sortBy=publishedAt&apiKey=d4afd243e0834ef09eb1ea7f3eadfd88";
 
     var response = await http.get(url);
     var jsonData = jsonDecode(response.body);

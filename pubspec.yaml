@@ -19,11 +19,19 @@ dependencies:
     flutter_staggered_animations: ^0.1.2
     webview_flutter: ^0.3.22+1
     lottie: ^0.4.0+1
+    flutter_launcher_icons: ^0.7.5
+    url_launcher: ^5.4.11
+    liquid_progress_indicator: ^0.3.2
 
 dev_dependencies:
     flutter_config:
     flutter_test:
         sdk: flutter
+
+flutter_icons:
+    image_path: "assets/logo/go_green_logo.PNG"
+    android: true
+    ios: true
 
 flutter:
     uses-material-design: true
@@ -31,3 +39,4 @@ flutter:
     assets:
         - assets/images/
         - assets/lottie-animations/
+        - assets/logo/
