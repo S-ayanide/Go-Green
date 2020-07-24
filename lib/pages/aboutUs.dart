@@ -113,15 +113,16 @@ This app aims to help the environment by planting trees and thus provides the ch
                             SizedBox(
                               height: 10,
                             ),
-                            Padding(
+                            Container(
                               padding: const EdgeInsets.only(
                                 top: 10,
-                                left: 45,
-                                right: 45,
+                                left: 50,
+                                right: 50,
                               ),
                               child: Row(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.center,
                                 children: <Widget>[
                                   IconButton(
                                     icon: FaIcon(
