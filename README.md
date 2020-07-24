@@ -6,8 +6,7 @@ This app aims to help the environment by planting trees and thus provides the ch
 
 # See it in action
 
-<img src="https://raw.githubusercontent.com/S-ayanide/Go-Green/master/assets/sample/rec1.gif" width="230" />
-<img src="https://raw.githubusercontent.com/S-ayanide/Go-Green/master/assets/sample/rec2.gif" width="230" />
+<img src="https://raw.githubusercontent.com/S-ayanide/Go-Green/master/assets/sample/rec1.gif" width="230" /> <img src="https://raw.githubusercontent.com/S-ayanide/Go-Green/master/assets/sample/rec2.gif" width="230" />
 
 # Dependencies
 
@@ -49,7 +48,8 @@ Link: [Check it out](https://flutterhackathon.com/)
 
 # Completion Certificate
 
-<img src="https://raw.githubusercontent.com/S-ayanide/Go-Green/master/assets/sample/Hack20.PNG" width="230" />
+<p align="center">
+    <img src="https://raw.githubusercontent.com/S-ayanide/Go-Green/master/assets/sample/Hack20.PNG" width="230" />
 
 ## Getting Started
 
